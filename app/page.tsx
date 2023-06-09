@@ -1,8 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { getBlogViews, getTweetCount, getStarCount } from 'lib/metrics';
-
-import { name, about, bio, avatar } from 'lib/info';
+// import { name, about, bio, avatar } from 'lib/info';
 import { CurriculumIcon, GithubIcon, LinkedinIcon } from 'components/icons';
 
 export const revalidate = 60;
