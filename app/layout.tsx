@@ -14,15 +14,15 @@ const kaisei = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Home | Portfolio Web',
+    template: '%s Home | Portfolio Web',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Web Developer',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
+    title: 'Home | Portfolio Web',
+    description: 'Web Developer',
     url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    siteName: 'Home | Jonatas"s portfolio',
     images: [
       {
         url: 'https://leerob.io/og.jpg',
@@ -44,17 +44,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  twitter: {
-    title: 'Lee Robinson',
-    card: 'summary_large_image',
-  },
   icons: {
     shortcut: '/favicon.ico',
   },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
+  // verification: {
+  //   google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
+  //   yandex: '14d2e73487fa6c71',
+  // },
 };
 
 export default function RootLayout({
@@ -64,15 +60,15 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang='en'
       className={clsx(
         'text-black bg-white dark:text-white dark:bg-[#111010]',
         kaisei.variable
       )}
     >
-      <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
+      <body className='antialiased max-w-5xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
         <Sidebar />
-        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
+        <main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0'>
           {children}
           <Analytics />
         </main>
