@@ -48,10 +48,10 @@ export default function Navbar() {
         </div>
         <LayoutGroup>
           <nav
-            className='flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative'
+            className='flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade scroll-pr-6 md:relative'
             id='nav'
           >
-            <div className='flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0'>
+            <div className='flex flex-row md:flex-col pr-10 space-y-2'>
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
@@ -66,7 +66,7 @@ export default function Navbar() {
                       }
                     )}
                   >
-                    <span className='relative py-[5px] px-[10px]'>
+                    <span className='relative py-[5px] px-[10px] text-2xl'>
                       {name}
                       {path === pathname ? (
                         <motion.div

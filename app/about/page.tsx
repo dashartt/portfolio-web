@@ -10,13 +10,13 @@ export default function AboutPage() {
   return (
     <section>
       <h1 className='font-bold text-3xl font-serif mb-10'>Sobre mim</h1>
-      <article className='[&>p]:mb-4 [&>p]:text-justify'>
+      <article className='[&>p]:mb-4 [&>p]:text-justify [&>p]:text-xl [&>p-xl]:text-3xl'>
         <Image
           alt='Imagem de perfil'
           src='/perfil.png'
           width={200}
           height={40}
-          className='rounded-full float-left mr-4 mb-4'
+          className='rounded-full lg:float-left mr-4 mb-4 w-32 lg:w-52'
         />
         <p>Olá, legal que queira saber mais sobre mim!</p>
         <p>
